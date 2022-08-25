@@ -1,7 +1,8 @@
 <footer>
-    <div class="container">
 
-        <div class="footer-top">
+    <div class="footer-top">
+
+        <div class="container">
 
             <div class="footer-top-left">
 
@@ -93,11 +94,37 @@
 
             </div>
 
+
             <div class="footer-top-right">
                 <img src="{{asset('img/dc-logo-bg.png')}}" alt="">
             </div>
         
         </div>
-
     </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="btn">
+                SIGN UP NOW!
+            </div>
+
+            <div class="icons">
+                <p>FOLLOW US</p>
+                <div class="icon">
+                    <img src="{{ asset('img/footer-youtube.png') }}" alt="">
+                </div>
+                <div class="icon">
+                    <img src="{{ asset('img/footer-youtube.png') }}" alt="">
+                </div>
+                <div class="icon">
+                    <img src="{{ asset('img/footer-youtube.png') }}" alt="">
+                </div>
+                <div class="icon">
+                    <img src="{{ asset('img/footer-youtube.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </footer>

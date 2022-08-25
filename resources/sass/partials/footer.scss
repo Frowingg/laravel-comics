@@ -1,39 +1,70 @@
+.container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    
 footer{
-    margin-top: 20px;
-    .container{
-        width: 70%;
-        margin: 0 auto;
-        background-color: pink;
+    background-image: url('../../../public/img/footer-bg.jpg');
 
-        .footer-top{
-            height: 250px;
+    .footer-top{
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+
+        .footer-top-left{
             display: flex;
-            justify-content: space-between;
 
-            .footer-top-left{
-                display: flex;
+            .col{
+                height: 100%;
+                border: 1px solid black;
+                margin-right: 20px;
 
-                .col{
-                    height: 100%;
-                    border: 1px solid black;
-                    margin-right: 20px;
+                h3{
+                    color: white;
+                }
 
-                    li{
-                        margin-top: 5px;
-                        font-size: 11px;
-                    }
+                li{
+                    margin-top: 5px;
+                    font-size: 11px;
+                    color: gray;
+                }
 
-                    #shop{
-                        margin-top: 10px;
-                    }
+                #shop{
+                    margin-top: 10px;
                 }
             }
-            .footer-top-right{
-                img{
-                    height: 100%;
-                    width: 60%;
-                }
+
+        }
+        .footer-top-right{
+            img{
+                height: 200px;
+            }
+        }
+    }
+
+    .footer-bottom{
+        background-color: $secondary_color;
+        display: flex;
+        height: 80px;
+
+        .btn{
+            padding: 10px;
+            border: 1px solid $main_color;
+            color: white;
+        }
+        .icons{
+            display: flex;
+            align-items: center;
+
+            .icon, p{
+                margin-right: 10px;
+                color: $main_color;
+
             }
         }
     }
 }
+
+

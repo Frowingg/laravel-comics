@@ -1,0 +1,39 @@
+footer{
+    margin-top: 20px;
+    .container{
+        width: 70%;
+        margin: 0 auto;
+        background-color: pink;
+
+        .footer-top{
+            height: 250px;
+            display: flex;
+            justify-content: space-between;
+
+            .footer-top-left{
+                display: flex;
+
+                .col{
+                    height: 100%;
+                    border: 1px solid black;
+                    margin-right: 20px;
+
+                    li{
+                        margin-top: 5px;
+                        font-size: 11px;
+                    }
+
+                    #shop{
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .footer-top-right{
+                img{
+                    height: 100%;
+                    width: 60%;
+                }
+            }
+        }
+    }
+}

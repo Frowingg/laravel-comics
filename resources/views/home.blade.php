@@ -1,6 +1,14 @@
 @extends('layouts.app')
 
 @section('main_content')
-    <h1>Ciao sono la homepage</h1>
+<section class="products-list">
+    <div class="container">
+
+        @foreach ($comics as $comic)
+            <h1>{{$comic['title']}}</h1>
+        @endforeach
+
+    </div>
+</section>
 
 @endsection 

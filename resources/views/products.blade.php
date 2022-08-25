@@ -2,6 +2,6 @@
 
 @section('main_content')
 
-    @include('components.products-list')
+    @include('components.products-list', $comics)
 
 @endsection 

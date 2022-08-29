@@ -2,7 +2,10 @@
     <div class="container">
 
         @foreach ($comics as $comic)
-            <h1>{{$comic['title']}}</h1>
+            <div class="card">
+                <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                <p>{{$comic['title']}}</p>
+            </div>
         @endforeach
 
     </div>

@@ -4,4 +4,7 @@
 
 <h1>home</h1>
 
+@include('partials.banner')
+
+
 @endsection 

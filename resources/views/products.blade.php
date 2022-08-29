@@ -4,4 +4,7 @@
 
     @include('components.products-list', $comics)
 
+    @include('partials.banner')
+
+
 @endsection 

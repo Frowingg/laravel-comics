@@ -30,3 +30,26 @@ Route::get('/products', function () {
     return view('products', $data);
 
 })->name('products');
+
+Route::get('/product/{id}', function ($id) {
+    $comics_array = config('comics');
+    $current_comic = [];
+
+    foreach($comics_array as $comic) {
+       if($comic['id'] == $id) {
+           $current_comic = $comic;
+
+       }
+    }
+
+    // Se id non trovato
+    // if(empty($current_comic)) {
+    //     abort('404');
+    // }
+
+    $data = [
+        'current_comic' => $current_comic
+    ];
+    
+    return view('single-comic', $data);
+})->name('single-comic');
